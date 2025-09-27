@@ -110,4 +110,57 @@ The website will be the central hub for PawHope’s operations, integrating mult
 
 ---
 
-## Sitemap
+## 🎨 Color Palette
+
+PawHope's design system is based on two main colors:
+
+- **Primary Purple**: `#5C4D91` - Primary brand color
+- **Complementary Pink**: `#D586C7` - Secondary color for highlights
+
+### Color Variations Used:
+
+- **White**: `#ffffff`
+- **Black/Text**: `#2c2c2c`
+- **Light Gray**: `#f8f9fa`
+- **Medium Gray**: `#6c757d`
+- **Dark Gray**: `#343a40`
+
+## 🌈 Design System
+
+### Gradients
+
+```css
+--gradient-primary: linear-gradient(135deg, #5c4d91, #d586c7);
+--gradient-hero: linear-gradient(
+  135deg,
+  rgba(92, 77, 145, 0.95),
+  rgba(213, 134, 199, 0.95)
+);
+```
+
+### Shadows
+
+```css
+--shadow-light: 0 2px 10px rgba(92, 77, 145, 0.1);
+--shadow-medium: 0 4px 20px rgba(92, 77, 145, 0.15);
+--shadow-heavy: 0 8px 30px rgba(92, 77, 145, 0.2);
+```
+
+### Other Elements
+
+- **Border Radius**: `12px`
+- **Transitions**: `all 0.3s ease`
+
+## 📱 Responsiveness
+
+The site is fully responsive with breakpoints at:
+
+- **Desktop**: > 768px
+- **Mobile**: ≤ 768px
+
+### Mobile Adaptations:
+
+- Column Navigation
+- Adaptive Grids
+- Single Column Forms
+- Responsive Images
