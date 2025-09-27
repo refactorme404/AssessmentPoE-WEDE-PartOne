@@ -58,7 +58,7 @@ The website will be the central hub for PawHope’s operations, integrating mult
 ## Technical Requirements
 
 - **Domain:** pawhope.org.za
-- **Hosting:** [Shared hosting](https://www.domains.co.za)
+- **Hosting:** [Shared hosting](https:/www.domains.co.za)
 - **Languages:** HTML5, CSS3, JavaScript
 - **Code Editor:** Visual Studio Code
 - **Version Control:** Git + GitHub (private repository)
