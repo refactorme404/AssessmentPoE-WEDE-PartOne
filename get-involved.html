@@ -3,104 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PawHope | Get Involved</title>
+    <title>Get Involved | Volunteer & Support PawHope</title>
     <meta
       name="description"
-      content="Volunteer, sponsor or donate to PawHope."
+      content="Join PawHope as a volunteer, sponsor, or donor. Help us rescue more animals and make a difference in their lives."
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header>
-      <nav aria-label="Main">
-        <a href="index.html">PawHope</a>
-        <ul>
+    <header class="header">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="logo">PawHope</a>
+        <ul class="nav-links">
           <li><a href="about.html">About Us</a></li>
           <li><a href="adopt.html">Adopt</a></li>
-
           <li><a href="accessories.html">Accessories</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <button><a href="get-involved.html">Get Involved</a></button>
+        <button class="cta-button active">
+          <a href="get-involved.html">Get Involved</a>
+        </button>
       </nav>
     </header>
 
     <main>
       <!-- Volunteer Section -->
-      <section>
-        <h2>Volunteer with PawHope</h2>
-        <p>
-          Join our team of dedicated volunteers and help make a difference in
-          the lives of abandoned animals.
-        </p>
-        <form action="#" method="post">
-          <label for="volunteer-name">Full Name:</label><br />
-          <input
-            type="text"
-            id="volunteer-name"
-            name="volunteer-name"
-            required
-          /><br /><br />
+      <section class="volunteer-section">
+        <div class="container">
+          <h2>Volunteer with PawHope</h2>
+          <p class="lead">
+            Join our team of dedicated volunteers and help make a difference in
+            the lives of abandoned animals.
+          </p>
 
-          <label for="volunteer-email">Email:</label><br />
-          <input
-            type="email"
-            id="volunteer-email"
-            name="volunteer-email"
-            required
-          /><br /><br />
+          <form class="volunteer-form" action="#" method="post">
+            <div class="form-group">
+              <label for="volunteer-name">Full Name:</label>
+              <input
+                type="text"
+                id="volunteer-name"
+                name="volunteer-name"
+                required
+              />
+            </div>
 
-          <label for="volunteer-interest">Area of Interest:</label><br />
-          <select id="volunteer-interest" name="volunteer-interest">
-            <option value="animal-care">Animal Care</option>
-            <option value="fundraising">Fundraising</option>
-            <option value="events">Events</option>
-            <option value="administration">Administration</option></select
-          ><br /><br />
+            <div class="form-group">
+              <label for="volunteer-email">Email:</label>
+              <input
+                type="email"
+                id="volunteer-email"
+                name="volunteer-email"
+                required
+              />
+            </div>
 
-          <label for="volunteer-message">Message:</label><br />
-          <textarea
-            id="volunteer-message"
-            name="volunteer-message"
-            rows="5"
-          ></textarea
-          ><br /><br />
+            <div class="form-group">
+              <label for="volunteer-interest">Area of Interest:</label>
+              <select id="volunteer-interest" name="volunteer-interest">
+                <option value="animal-care">Animal Care</option>
+                <option value="fundraising">Fundraising</option>
+                <option value="events">Events</option>
+                <option value="administration">Administration</option>
+              </select>
+            </div>
 
-          <input type="submit" value="Submit" />
-        </form>
+            <div class="form-group">
+              <label for="volunteer-message">Message:</label>
+              <textarea
+                id="volunteer-message"
+                name="volunteer-message"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Submit Application
+            </button>
+          </form>
+        </div>
       </section>
 
       <!-- Sponsorship Section -->
-      <section>
-        <h2>Sponsorship Opportunities</h2>
-        <p>
-          Support PawHope by becoming a sponsor. Your contributions help us
-          provide medical care, food, and safe shelters for rescued animals.
-        </p>
-        <ul>
-          <li>Bronze Sponsor: R500/month</li>
-          <li>Silver Sponsor: R1,000/month</li>
-          <li>Gold Sponsor: R2,500/month</li>
-        </ul>
+      <section class="sponsorship-section">
+        <div class="container">
+          <h2>Sponsorship Opportunities</h2>
+          <p>
+            Support PawHope by becoming a sponsor. Your contributions help us
+            provide medical care, food, and safe shelters for rescued animals.
+          </p>
+
+          <div class="sponsorship-tiers">
+            <div class="sponsor-tier">
+              <h3>Bronze Sponsor</h3>
+              <div class="price">R500/month</div>
+              <p>Help provide basic care for our rescued animals</p>
+            </div>
+            <div class="sponsor-tier featured">
+              <h3>Silver Sponsor</h3>
+              <div class="price">R1,000/month</div>
+              <p>Support medical treatments and rehabilitation</p>
+            </div>
+            <div class="sponsor-tier">
+              <h3>Gold Sponsor</h3>
+              <div class="price">R2,500/month</div>
+              <p>Fund our comprehensive rescue operations</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Donation Section -->
-      <section>
-        <h2>Donate</h2>
-        <p>
-          Make a one-time or recurring donation to support our rescue and
-          rehabilitation programs.
-        </p>
-        <p>Click <a href="#">here</a> to donate online.</p>
+      <section class="donation-section">
+        <div class="container">
+          <h2>Donate</h2>
+          <p>
+            Make a one-time or recurring donation to support our rescue and
+            rehabilitation programs.
+          </p>
+          <p>
+            Click <a href="#" class="donation-link">here</a> to donate online
+            securely.
+          </p>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 PawHope. All Rights Reserved.</p>
-      <p>Contact: info@pawhope.org.za | +27 12 345 6789</p>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 PawHope. All Rights Reserved.</p>
+        <p>
+          Contact:
+          <a href="mailto:info@pawhope.org.za">info@pawhope.org.za</a> |
+          <a href="tel:+27123456789">+27 12 345 6789</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

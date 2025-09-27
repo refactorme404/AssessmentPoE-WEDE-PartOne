@@ -3,70 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PawHope | Blog & Resources</title>
+    <title>PawHope Blog | Animal Care Tips & Rescue Stories</title>
     <meta
       name="description"
-      content="Articles on pet care, vaccination schedules and campaigns."
+      content="Read our latest animal care tips, rescue stories, and updates from PawHope. Learn how to better care for your pets."
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header>
-      <nav aria-label="Main">
-        <a href="index.html">PawHope</a>
-        <ul>
+    <header class="header">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="logo">PawHope</a>
+        <ul class="nav-links">
           <li><a href="about.html">About Us</a></li>
           <li><a href="adopt.html">Adopt</a></li>
           <li><a href="accessories.html">Accessories</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <button><a href="get-involved.html">Get Involved</a></button>
+        <button class="cta-button">
+          <a href="get-involved.html">Get Involved</a>
+        </button>
       </nav>
     </header>
 
     <main>
-      <!-- Articles list -->
-      <section>
-        <h1>Blog & Resources</h1>
+      <!-- Page Header -->
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-breadcrumb">
+            <span class="icon">📝</span>
+            <h5>Stories & Tips</h5>
+          </div>
+          <h1>PawHope Blog</h1>
+        </div>
+        <img src="src/assets/hero.jpg" alt="PawHope Blog" />
+      </section>
 
-        <article>
-          <img src="images/blog1.jpg" width="260" alt="" />
-          <h2>Basic Pet Care Checklist</h2>
-          <p>
-            Food, fresh water, shelter, exercise, enrichment and regular vet
-            visits form the foundation of good pet care.
-          </p>
-          <p>27 Aug 2025</p>
-        </article>
+      <!-- Blog Posts -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="blog-grid">
+            <article class="blog-post">
+              <img src="src/assets/dog1.jpg" alt="Dog care tips" />
+              <div class="blog-content">
+                <h3>5 Essential Tips for New Dog Owners</h3>
+                <p class="blog-excerpt">
+                  Bringing home a new furry friend? Here are essential tips to
+                  help you and your new companion adjust to life together.
+                </p>
+                <div class="blog-meta">
+                  <span class="blog-date">January 15, 2025</span>
+                  <span class="blog-category">Pet Care</span>
+                </div>
+              </div>
+            </article>
 
-        <article>
-          <img src="images/blog2.jpg" width="260" alt="" />
-          <h2>Vaccination Schedule</h2>
-          <p>
-            Core vaccinations protect against major diseases. Always consult a
-            licensed veterinarian for timing and boosters.
-          </p>
-          <p>10 Mar 2025</p>
-        </article>
+            <article class="blog-post">
+              <img src="src/assets/cat1.jpg" alt="Cat rescue story" />
+              <div class="blog-content">
+                <h3>Luna's Journey: From Street Cat to Family Member</h3>
+                <p class="blog-excerpt">
+                  Read the heartwarming story of Luna, a rescued tabby cat who
+                  found her forever home through PawHope.
+                </p>
+                <div class="blog-meta">
+                  <span class="blog-date">January 10, 2025</span>
+                  <span class="blog-category">Success Stories</span>
+                </div>
+              </div>
+            </article>
 
-        <article>
-          <img src="images/blog3.jpg" width="260" alt="" />
-          <h2>Adoption Preparation</h2>
-          <p>
-            Prepare your home, assign responsibilities and set a routine to help
-            your new companion settle in smoothly.
-          </p>
-          <p>3 Jan 2025</p>
-        </article>
+            <article class="blog-post">
+              <img src="src/assets/dog1.jpg" alt="Pet nutrition" />
+              <div class="blog-content">
+                <h3>Understanding Pet Nutrition: A Complete Guide</h3>
+                <p class="blog-excerpt">
+                  Learn about proper nutrition for dogs and cats, including what
+                  to feed, when to feed, and foods to avoid.
+                </p>
+                <div class="blog-meta">
+                  <span class="blog-date">January 5, 2025</span>
+                  <span class="blog-category">Health & Nutrition</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-post">
+              <img src="src/assets/cat1.jpg" alt="Volunteer spotlight" />
+              <div class="blog-content">
+                <h3>Volunteer Spotlight: Meet Sarah</h3>
+                <p class="blog-excerpt">
+                  Get to know Sarah, one of our dedicated volunteers who has
+                  been helping animals at PawHope for over two years.
+                </p>
+                <div class="blog-meta">
+                  <span class="blog-date">December 28, 2024</span>
+                  <span class="blog-category">Volunteers</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 PawHope. All Rights Reserved.</p>
-      <p>Contact: info@pawhope.org.za | +27 12 345 6789</p>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 PawHope. All Rights Reserved.</p>
+        <p>
+          Contact:
+          <a href="mailto:info@pawhope.org.za">info@pawhope.org.za</a> |
+          <a href="tel:+27123456789">+27 12 345 6789</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

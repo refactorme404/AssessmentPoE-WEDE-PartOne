@@ -3,80 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PawHope | Accessories</title>
+    <title>Pet Accessories | PawHope Store</title>
     <meta
       name="description"
-      content="Accessories and merchandise supporting our rescue work."
+      content="Quality pet accessories and supplies. Every purchase supports our animal rescue mission at PawHope."
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header>
-      <nav aria-label="Main">
-        <a href="index.html">PawHope</a>
-        <ul>
+    <header class="header">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="logo">PawHope</a>
+        <ul class="nav-links">
           <li><a href="about.html">About Us</a></li>
           <li><a href="adopt.html">Adopt</a></li>
-
-          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="accessories.html" class="active">Accessories</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <button><a href="get-involved.html">Get Involved</a></button>
+        <button class="cta-button">
+          <a href="get-involved.html">Get Involved</a>
+        </button>
       </nav>
     </header>
 
     <main>
-      <!-- header page -->
-      <section>
-        <div>
-          <i>icon</i>
-          <h5>Pet Supplies</h5>
+      <!-- Page Header -->
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-breadcrumb">
+            <span class="icon">🛍️</span>
+            <h5>Pet Supplies</h5>
+          </div>
+          <h1>PawHope Accessories</h1>
         </div>
-        <h1>PawHope Accessories</h1>
-        <img src="images/page-hero-accessories.jpg" width="100%" alt="" />
+        <img src="src/assets/hero.jpg" alt="Pet accessories" />
       </section>
 
-      <section>
-        <figure>
-          <div>
-            <img
-              src="images/accessories1.jpg"
-              width="110px"
-              alt="Small dog dish"
-            />
-          </div>
-          <figcaption>Small dog dish</figcaption>
-        </figure>
+      <!-- Accessories Gallery -->
+      <section class="accessories-gallery">
+        <div class="container">
+          <div class="accessories-grid">
+            <figure class="accessory-card">
+              <div class="accessory-image">
+                <img src="src/assets/dog1.jpg" alt="Small dog dish" />
+              </div>
+              <figcaption>Small dog dish</figcaption>
+              <div class="accessory-price">R89.99</div>
+            </figure>
 
-        <figure>
-          <div>
-            <img src="images/accessories2.jpg" width="110px" alt="Dog ball" />
-          </div>
-          <figcaption>Dog ball</figcaption>
-        </figure>
+            <figure class="accessory-card">
+              <div class="accessory-image">
+                <img src="src/assets/cat1.jpg" alt="Dog ball" />
+              </div>
+              <figcaption>Dog ball</figcaption>
+              <div class="accessory-price">R45.99</div>
+            </figure>
 
-        <figure>
-          <div>
-            <img src="images/accessories3.jpg" width="110px" alt="Cat brush" />
-          </div>
-          <figcaption>Cat brush</figcaption>
-        </figure>
+            <figure class="accessory-card">
+              <div class="accessory-image">
+                <img src="src/assets/dog1.jpg" alt="Cat brush" />
+              </div>
+              <figcaption>Cat brush</figcaption>
+              <div class="accessory-price">R65.99</div>
+            </figure>
 
-        <figure>
-          <div>
-            <img src="images/accessories4.jpg" width="110px" alt="Meat bones" />
+            <figure class="accessory-card">
+              <div class="accessory-image">
+                <img src="src/assets/cat1.jpg" alt="Meat bones" />
+              </div>
+              <figcaption>Meat bones</figcaption>
+              <div class="accessory-price">R129.99</div>
+            </figure>
           </div>
-          <figcaption>Meat bones</figcaption>
-        </figure>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 PawHope. All Rights Reserved.</p>
-      <p>Contact: info@pawhope.org.za | +27 12 345 6789</p>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 PawHope. All Rights Reserved.</p>
+        <p>
+          Contact:
+          <a href="mailto:info@pawhope.org.za">info@pawhope.org.za</a> |
+          <a href="tel:+27123456789">+27 12 345 6789</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
