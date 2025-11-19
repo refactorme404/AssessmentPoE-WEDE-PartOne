@@ -149,23 +149,6 @@
   overflow: hidden;
 }
 
-.pet-image::after {
-  content: '🔍 Click to view details';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(92, 77, 145, 0.8);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .pet-card:hover .pet-image::after {
   opacity: 1;
 }
