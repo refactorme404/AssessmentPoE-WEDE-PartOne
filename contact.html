@@ -9,6 +9,12 @@
       content="Contact PawHope for enquiries, support, volunteering opportunities, or to report animals in need of rescue."
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="css/map.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
   </head>
   <body>
     <!-- Header / Navigation -->
@@ -95,21 +101,78 @@
                 <span class="contact-label">Address:</span>
                 <span>123 Rescue Street, Johannesburg, South Africa</span>
               </div>
+              <div class="contact-item">
+                <span class="contact-label">Emergency:</span>
+                <a href="tel:+27821234567">+27 82 123 4567</a>
+              </div>
             </div>
 
-            <!-- Google Maps -->
-            <div class="map-container">
-              <h3>Our Rescue Location</h3>
-              <iframe
-                title="Johannesburg Rescue Point"
-                src="https:/maps.google.com/maps?q=Johannesburg&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="300"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-              >
-              </iframe>
+            <!-- Operating Hours -->
+            <div class="contact-info-card">
+              <h3>Operating Hours</h3>
+              <div class="contact-item">
+                <span class="contact-label">Main Shelter:</span>
+                <span>Mon-Sun: 8:00 AM - 6:00 PM</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Veterinary Clinic:</span>
+                <span>Mon-Fri: 9:00 AM - 5:00 PM</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Adoption Center:</span>
+                <span>Sat-Sun: 10:00 AM - 4:00 PM</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Emergency Line:</span>
+                <span>24/7 Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Map Section -->
+      <section class="map-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Find Our Locations</h2>
+            <p>
+              Visit any of our rescue points, veterinary partners, or adoption
+              centers
+            </p>
+          </div>
+
+          <!-- Map Controls -->
+          <div class="map-controls">
+            <button class="map-btn" id="focusMainShelter">
+              🐾 Main Shelter
+            </button>
+            <button class="map-btn" onclick="locateUser()">
+              📍 My Location
+            </button>
+          </div>
+
+          <!-- Leaflet Map Container -->
+          <div class="map-container">
+            <div id="pawhopeMap"></div>
+          </div>
+
+          <!-- Map Legend -->
+          <div class="map-legend">
+            <h4>Location Types</h4>
+            <div class="legend-items">
+              <div class="legend-item">
+                <div class="legend-color legend-rescue"></div>
+                <span>Rescue Shelters</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color legend-vet"></div>
+                <span>Veterinary Clinics</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color legend-adoption"></div>
+                <span>Adoption Centers</span>
+              </div>
             </div>
           </div>
         </div>
@@ -127,5 +190,10 @@
         </p>
       </div>
     </footer>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Custom Map JavaScript -->
+    <script src="js/map.js"></script>
   </body>
 </html>
