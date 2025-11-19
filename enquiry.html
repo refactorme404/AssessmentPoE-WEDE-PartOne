@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Involved | Volunteer & Support PawHope</title>
+    <meta
+      name="description"
+      content="Join PawHope as a volunteer, sponsor, or donor. Help us rescue more animals and make a difference in their lives."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/enquiry-form.css" />
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header class="header">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="logo">PawHope</a>
+        <ul class="nav-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="cta-button active">
+          <a href="get-involved.html">Get Involved</a>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <div class="page-breadcrumb">
+            <span class="icon">🤝</span>
+            <h5>Make a Difference</h5>
+          </div>
+          <h1>Get Involved with PawHope</h1>
+        </div>
+        <img src="images/hero.jpg" alt="Get Involved with PawHope" />
+      </section>
+
+      <!-- Enquiry Form Section -->
+      <section class="enquiry-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>
+              Tell us how you'd like to help and we'll provide you with all the
+              information you need
+            </p>
+          </div>
+
+          <form id="enquiryForm" class="enquiry-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your.email@example.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+27 12 345 6789"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="enquiryType">How would you like to help? *</label>
+                <select id="enquiryType" name="enquiryType" required>
+                  <option value="">Please select an option</option>
+                  <option value="adopt">Adopt a Pet</option>
+                  <option value="volunteer">Become a Volunteer</option>
+                  <option value="sponsor">Become a Sponsor</option>
+                  <option value="general">General Enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Animal Selection Field (shown only for adoption) -->
+            <div id="animalGroup" class="form-group animal-group">
+              <label for="animalSelect"
+                >Which animal are you interested in? *</label
+              >
+              <select
+                id="animalSelect"
+                name="animalSelect"
+                class="animal-select"
+              >
+                <option value="">Please select an animal</option>
+                <option value="Buddy">Buddy - Young Labrador Mix</option>
+                <option value="Luna">Luna - Calm Tabby Cat</option>
+                <option value="Max">Max - Loyal German Shepherd</option>
+                <option value="Whiskers">Whiskers - Playful Kitten</option>
+                <option value="Charlie">Charlie - Gentle Senior Beagle</option>
+                <option value="Bella">Bella - Shy Persian Cat</option>
+                <option value="not-sure">I'm not sure yet</option>
+              </select>
+              <small
+                style="
+                  color: #666;
+                  font-size: 14px;
+                  margin-top: 5px;
+                  display: block;
+                "
+              >
+                You can view all available animals on our
+                <a href="adopt.html" style="color: #db89ca">Adopt page</a>
+              </small>
+            </div>
+
+            <!-- Budget Field (shown only for sponsorship) -->
+            <div id="budgetGroup" class="form-group budget-group">
+              <label for="budget">Monthly Sponsorship Budget (ZAR)</label>
+              <div class="currency-prefix">
+                <input
+                  type="number"
+                  id="budget"
+                  name="budget"
+                  min="0"
+                  step="50"
+                  placeholder="500"
+                />
+              </div>
+              <small
+                style="
+                  color: #666;
+                  font-size: 14px;
+                  margin-top: 5px;
+                  display: block;
+                "
+              >
+                Suggested amounts: R500 (Bronze), R1,000 (Silver), R2,500 (Gold)
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline"
+                >When are you looking to get involved?</label
+              >
+              <select id="timeline" name="timeline">
+                <option value="">No specific timeline</option>
+                <option value="immediately">Immediately</option>
+                <option value="1month">Within 1 month</option>
+                <option value="3months">Within 3 months</option>
+                <option value="6months">Within 6 months</option>
+              </select>
+            </div>
+
+            <!-- Message Field (hidden for adoption) -->
+            <div id="messageGroup" class="form-group">
+              <label for="message">Tell us more about your interest *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Please share any specific interests, questions, or requirements you have..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Submit Your Enquiry
+            </button>
+          </form>
+
+          <!-- Form Response Area -->
+          <div id="formResponse" class="form-response"></div>
+        </div>
+      </section>
+
+      <!-- Sponsorship Section -->
+      <section class="sponsorship-section">
+        <div class="container">
+          <h2>Sponsorship Opportunities</h2>
+          <p class="lead">
+            Support PawHope by becoming a sponsor. Your contributions help us
+            provide medical care, food, and safe shelters for rescued animals.
+          </p>
+
+          <div class="sponsorship-tiers">
+            <div class="sponsor-tier">
+              <h3>Bronze Sponsor</h3>
+              <div class="price">R500/month</div>
+              <ul>
+                <li>Basic care for 1 animal</li>
+                <li>Quarterly updates</li>
+                <li>Sponsor certificate</li>
+                <li>Social media mention</li>
+              </ul>
+            </div>
+            <div class="sponsor-tier featured">
+              <h3>Silver Sponsor</h3>
+              <div class="price">R1,000/month</div>
+              <ul>
+                <li>Medical treatments for 1 animal</li>
+                <li>Monthly updates with photos</li>
+                <li>Featured on website</li>
+                <li>Invitation to sponsor events</li>
+              </ul>
+            </div>
+            <div class="sponsor-tier">
+              <h3>Gold Sponsor</h3>
+              <div class="price">R2,500/month</div>
+              <ul>
+                <li>Full medical coverage for 2 animals</li>
+                <li>Weekly updates and videos</li>
+                <li>Recognition in annual report</li>
+                <li>Private shelter tours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 PawHope. All Rights Reserved.</p>
+        <p>
+          Contact:
+          <a href="mailto:info@pawhope.org.za">info@pawhope.org.za</a> |
+          <a href="tel:+27123456789">+27 12 345 6789</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/enquiry-form.js"></script>
+  </body>
+</html>
