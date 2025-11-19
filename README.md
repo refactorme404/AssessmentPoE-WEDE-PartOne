@@ -6,7 +6,7 @@
 - **Student Number:** ST10465622
 - **Course:** Web Development (Introduction)
 - **Submission Part:** Part 1 – Building the Foundation ✅
-- **Submission Part:** Part 2 – Designing the Visual 🚩
+- **Submission Part:** Part 2 – Designing the Visual ✅
 
 ---
 
